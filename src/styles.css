@@ -11,6 +11,9 @@
   --font-body: "Lato", "sans-serif";
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /*.theme-purple {*/
 /*  @theme {*/
 /*    --color-brand-primary: #9D6BA0;*/

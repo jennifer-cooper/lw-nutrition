@@ -1,66 +1,52 @@
-<body class="bg-brand-light font-body text-brand-dark">
+<div id="home" class="bg-brand-light font-body text-brand-dark">
 <header class="bg-brand-primary text-white p-6 shadow-xs">
   <div class="relative flex h-12 items-center gap-4 px-4 py-2 md:h-20 md:py-6 md:pr-9 md:pl-6">
     <div class="flex items-center space-x-4">
-      <img ngSrc="/logos/white-side.png" alt="Louise Wilkinson Nutrition Logo" class="h-60 w-auto object-contain"
+      <img ngSrc="/logos/white-side.png" alt="Louise Wilkinson Nutrition Logo" class="h-60 w-auto object-contain min-w-[12rem]"
            height="1024" width="1024">
-      <!--      <h1 class="text-3xl font-heading text-white">Louise Wilkinson Nutrition</h1>-->
     </div>
     <nav class="space-x-4">
-      <a href="#" class="hover:underline">Home</a>
-      <a href="#" class="hover:underline">About</a>
-      <a href="#" class="hover:underline">Services</a>
-      <a href="#" class="hover:underline">Contact</a>
+      <a routerLink="/" class="hover:underline">Home</a>
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#services" class="hover:underline">Services</a>
+      <a routerLink="/contact" class="hover:underline">Contact</a>
+      <a routerLink="/faqs" class="hover:underline">FAQs</a>
     </nav>
   </div>
 </header>
 
-<!-- Hero Section -->
-<section class="bg-white py-20 shadow-sm">
-  <div class="max-w-5xl mx-auto text-center px-4">
-    <h2 class="text-5xl font-heading text-brand-secondary mb-6">Fuel Your Body, Nourish Your Life</h2>
-    <p class="text-lg mb-8">Evidence-based nutrition support to help you thrive — physically and mentally.<p>
-    <p class="text-lg mb-8">
-    Louise specialises in Gastroenterology and provides expert dietary advice for individuals living with digestive
-    conditions such as IBS, Crohn’s Disease, Coeliac Disease, Liver Disease, and Pancreatitis. She offers personalised
-    support to help you manage symptoms, improve digestion, and feel confident about your food choices. </p>
-    <button class="bg-brand-accent hover:bg-brand-primary text-white px-6 py-3 rounded-full font-semibold">Contact Louise</button>
-  </div>
-</section>
+<!-- Routed content -->
+<main>
+  <router-outlet></router-outlet>
+</main>
 
-<!-- Services Cards -->
-<section class="max-w-6xl mx-auto py-16 px-4">
-  <h3 class="text-3xl font-heading text-center mb-12">What I Offer</h3>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    <div class="bg-white p-6 rounded-xl shadow text-center">
-      <h4 class="text-xl font-heading mb-2">1:1 Consultations</h4>
-      <p>Personalised guidance for your nutritional goals, tailored just for you.</p>
-    </div>
-    <div class="bg-white p-6 rounded-xl shadow text-center">
-      <h4 class="text-xl font-heading mb-2">Meal Planning</h4>
-      <p>Custom meal plans to simplify eating well every day without stress.</p>
-    </div>
-    <div class="bg-white p-6 rounded-xl shadow text-center">
-      <h4 class="text-xl font-heading mb-2">Workshops</h4>
-      <p>Interactive group sessions on diet, health, and long-term lifestyle change.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Testimonials -->
-<section class="bg-brand-light py-16">
-  <div class="max-w-4xl mx-auto px-4 text-center">
-    <h3 class="text-3xl font-heading mb-8">Client Stories</h3>
-    <div class="space-y-8">
-      <blockquote class="italic">“Louise helped me completely transform my relationship with food. I feel confident and nourished every day.”<br><span class="block mt-2 font-semibold">– Sarah L.</span></blockquote>
-      <blockquote class="italic">“The meal plans are a life-saver! Easy, affordable, and totally suited to my lifestyle.”<br><span class="block mt-2 font-semibold">– James P.</span></blockquote>
+<footer class="bg-brand-secondary text-white px-4 sm:px-6 lg:px-12 xl:px-20 py-8 text-sm leading-relaxed">
+  <!-- Accreditation block -->
+ <!-- <div class="flex flex-col sm:flex-row sm:justify-between items-center gap-4 text-sm text-white mt-4 mb-4">
+    <a href="https://www.bda.uk.com" target="_blank" rel="noopener" class="hover:underline">
+      Member of the British Dietetic Association
+    </a>
+    <a href="https://www.hcpc-uk.org" target="_blank" rel="noopener" class="hover:underline">
+      Fully registered with the Health and Care Professions Council (HCPC)
+    </a>
+  </div>-->
+  <!-- Divider and contact section -->
+  <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pt-6 border-t border-white/20">
+    <p class="text-xs text-brand-light/80">&copy; 2025 Louise Wilkinson Nutrition MSc BSc RD. All rights reserved.</p>
+    <div class="flex space-x-4 mt-4 sm:mt-0 items-center">
+      <a href="https://www.linkedin.com/in/louise-wilkinson-947828330" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+        <svg class="w-5 h-5 fill-white hover:fill-brand-accent transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M4.98 3.5c0 1.38-1.11 2.5-2.48 2.5S0 4.88 0 3.5 1.11 1 2.48 1 4.98 2.12 4.98 3.5zM.47 24h4.94V7.98H.47V24zM7.06 7.98v16.02h4.94v-8.56c0-2.28.82-3.84 2.87-3.84 1.57 0 2.5 1.06 2.5 2.62v9.78h4.94v-10.5c0-4.38-2.34-6.42-5.46-6.42-2.5 0-3.62 1.38-4.23 2.34h-.07v-2.02H7.06z"/>
+        </svg>
+      </a>
+      <a href="mailto:louisem.cooper@yahoo.com" class="hover:underline text-white text-xs">
+        louisem.cooper&#64;yahoo.com
+      </a>
+      <a routerLink="/privacy-policy" class="hover:underline text-white text-xs">
+        Privacy Policy
+      </a>
     </div>
   </div>
-</section>
-
-<footer class="bg-brand-secondary text-white py-6 text-center">
-  <p>&copy; 2025 Louise Wilkinson Nutrition. All rights reserved.</p>
 </footer>
-</body>
 
-<router-outlet />
+</div>

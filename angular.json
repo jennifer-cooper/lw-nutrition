@@ -24,6 +24,26 @@
                 "input": "src/logos/assets",
                 "glob": "**/*.png",
                 "output": "/logos"
+              },
+              {
+                "input": "src/profile/assets",
+                "glob": "**/*.jpg",
+                "output": "/profile"
+              },
+              {
+                "input": "src/profile/assets",
+                "glob": "**/*.jpeg",
+                "output": "/profile"
+              },
+              {
+                "input": "src/registrations/assets",
+                "glob": "**/*.jpg",
+                "output": "/registrations"
+              },
+              {
+                "input": "src/registrations/assets",
+                "glob": "**/*.png",
+                "output": "/registrations"
               }
             ],
             "styles": ["src/styles.css"],
