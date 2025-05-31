@@ -1,7 +1,7 @@
 <section class="bg-white py-20 shadow-sm px-8 sm:px-4">
   <div class="max-w-5xl mx-auto text-center">
-    <h2 class="text-5xl font-heading text-brand-secondary mb-6">Louise Wilkinson Nutrition</h2>
-    <h3 class="text-3xl font-heading text-brand-secondary mb-6">MSc BSc RD</h3>
+    <h1 class="text-5xl font-heading text-brand-secondary mb-6">Louise Wilkinson Nutrition</h1>
+    <h2 class="text-3xl font-heading text-brand-secondary mb-6">MSc BSc RD</h2>
     <img
       ngSrc="profile/louise-fruit.jpeg"
       height="1024" width="1024"
@@ -37,27 +37,27 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
     <app-service-card
       [title]="'1:1 Consultations'"
-      [description]="'I offer individual consultations on a range of conditions. Dietary advice on the internet can be conflicting and confusing. I will give you expert, evidence based advice to help you achieve your goals. Examples of conditions that I can help with: Irritable Bowel Syndrome (IBS), Inflammatory Bowel Disease (IBD), Coeliac Disease, Stomas, Liver disease, Diverticular Disease, Bile acid malabsorption (BAM), Heart Disease, High Cholesterol, Unintentional Weight loss, Vegan/Vegetarian Diet, Healthy eating and gut health. Get in contact to find out more or book a free 15 minute discovery call.'"
+      [description]="consultationDescription"
     />
 
     <app-service-card
       [title]="'IBS Consultations'"
-      [description]="'I can help those with digestive disorders including Irritable Bowel Syndrome (IBS), to achieve symptom control. Symptoms of functional gut disorders such as bloating, abdominal pain, wind, constipation and diarrhoea can be debilitating and really affect quality of life. I have 9 years of experience treating people with functional gut disorders. I use the latest evidence based advice to make an individualised nutritional plan that fits in with your lifestyle. I am fully trained in the Low FODMAP diet, developed by Monash University and adapted by Kings College London, to help manage IBS. I’ll help you follow it, then reintroduce foods to identify triggers and build a long-term, varied diet. This diet is not appropriate for everyone and alternatives may be advised. Get in contact to find out more or book a free 15 minute discovery call.'"
+      [description]="ibsDescription"
     />
 
     <app-service-card
       [title]="'Inflammatory Bowel Disease (IBD) Consultations'"
-      [description]="'Deciding what to eat when you have Inflammatory Bowel Disease (IBD) can feel overwhelming. There is a lot of conflicting information online. I have worked with a hospital IBD Gastroenterology Team for 9 years. I can provide evidence-based, practical advice on what to eat during a flare-up and in remission. I’ll assess your diet and help you meet your nutrient needs, manage symptoms, and prevent deficiencies or weight loss. Get in contact to find out more or book a free 15 minute discovery call.'"
+      [description]="ibdDescription"
     />
 
     <app-service-card
       [title]="'Dietary Analyses'"
-      [description]="'Would you like to know whether your diet is balanced or if you are reaching specific micronutrient and macronutrient targets? I can analyse your diet using nutritional software and provide a breakdown of your nutrient intake in an easy to understand format. Get in contact to find out more or book a free 15 minute discovery call.'"
+      [description]="dietaryAnalysisDescription"
     />
 
     <app-service-card
       [title]="'Meal Planning'"
-      [description]="'Would you like an easy to follow meal plan that meets your nutritional goals in micronutrients and macronutrients? I can provide a practical meal plan and shopping list to make weekly meal planning quicker and easier. Get in contact to find out more or book a free 15 minute discovery call.'"
+      [description]="mealPlanningDescription"
     />
   </div>
 </section>

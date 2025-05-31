@@ -1,15 +1,14 @@
 <div class="bg-white p-6 rounded-xl shadow text-left flex flex-col h-full">
   <h4 class="text-xl font-heading mb-2">{{ title() }}</h4>
 
-  <p
+<div
     class="text-brand-dark mb-4 transition-all ease-in-out"
     [ngClass]="{
-      'line-clamp-none': expanded(),
-      'line-clamp-2': !expanded()
-    }"
-  >
-    {{ description() }}
-  </p>
+    'line-clamp-none': expanded(),
+    'line-clamp-2': !expanded()
+  }"
+    [innerHTML]="description()"
+></div>
 
   <button
     (click)="toggle()"
