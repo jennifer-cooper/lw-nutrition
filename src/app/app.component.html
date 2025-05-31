@@ -1,17 +1,19 @@
 <div id="home" class="bg-brand-light font-body text-brand-dark">
-  <header class="bg-brand-primary text-white px-4 sm:px-6 lg:px-12 xl:px-20 py-6 shadow-xs">
+  <header class="bg-brand-primary text-white px-4 sm:px-6 lg:px-12 xl:px-20 py-6 shadow-md">
     <div class="flex flex-col items-center gap-4 md:flex-row md:justify-between md:items-center">
       <div class="flex justify-center md:justify-start">
-        <img
-          ngSrc="logos/white-side-cropped.png"
-          alt="Louise Wilkinson Nutrition Logo"
-          class="h-30 w-auto md:h-30 max-w-full object-contain"
-          width="1024"
-          height="1024"
-        />
+        <a routerLink="/" aria-label="Home">
+          <img
+            ngSrc="logos/white-side-cropped.png"
+            alt="Louise Wilkinson Nutrition Logo"
+            class="h-30 w-auto md:h-30 max-w-full object-contain cursor-pointer"
+            width="1024"
+            height="1024"
+          />
+        </a>
       </div>
 
-      <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-center">
+      <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xl text-center">
         <a routerLink="/" class="hover:underline">Home</a>
         <a href="#about" class="hover:underline">About</a>
         <a href="#services" class="hover:underline">Services</a>
@@ -21,24 +23,11 @@
     </div>
   </header>
 
-
-
-<!-- Routed content -->
 <main>
   <router-outlet></router-outlet>
 </main>
 
 <footer class="bg-brand-secondary text-white px-4 sm:px-6 lg:px-12 xl:px-20 py-8 text-sm leading-relaxed">
-  <!-- Accreditation block -->
- <!-- <div class="flex flex-col sm:flex-row sm:justify-between items-center gap-4 text-sm text-white mt-4 mb-4">
-    <a href="https://www.bda.uk.com" target="_blank" rel="noopener" class="hover:underline">
-      Member of the British Dietetic Association
-    </a>
-    <a href="https://www.hcpc-uk.org" target="_blank" rel="noopener" class="hover:underline">
-      Fully registered with the Health and Care Professions Council (HCPC)
-    </a>
-  </div>-->
-  <!-- Divider and contact section -->
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pt-6 border-t border-white/20">
     <p class="text-xs text-brand-light/80">&copy; 2025 Louise Wilkinson Nutrition MSc BSc RD. All rights reserved.</p>
     <div class="flex space-x-4 mt-4 sm:mt-0 items-center">
@@ -48,10 +37,10 @@
         </svg>
       </a>
       <a href="mailto:louisem.cooper@yahoo.com" class="hover:underline text-white text-xs">
-        louisem.cooper&#64;yahoo.com
+        info&#64;lw-nutrition.com
       </a>
       <a routerLink="/privacy-policy" class="hover:underline text-white text-xs">
-        Privacy Policy
+        Privacy Policy and Disclaimer
       </a>
     </div>
   </div>
