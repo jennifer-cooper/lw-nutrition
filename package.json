@@ -7,6 +7,8 @@
     "build": "ng build",
     "build:gh-pages": "ng build --base-href=https://jennifer-cooper.github.io/lw-nutrition/",
     "deploy": "npx angular-cli-ghpages --dir=dist/browser",
+    "deploy-gh-pages": "npm run build:gh-pages && npm run deploy",
+    "deploy-prod": "docker build -t lw-nutrition . && docker tag lw-nutrition europe-west1-docker.pkg.dev/lw-nutrition/lw-repo/lw-nutrition:latest && docker push europe-west1-docker.pkg.dev/lw-nutrition/lw-repo/lw-nutrition:latest && gcloud run deploy lw-nutrition --image europe-west1-docker.pkg.dev/lw-nutrition/lw-repo/lw-nutrition:latest --platform managed --region europe-west1 --allow-unauthenticated",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:nutrition": "node dist/nutrition/server/server.mjs"
