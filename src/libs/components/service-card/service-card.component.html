@@ -12,7 +12,7 @@
 
   <button
     (click)="toggle()"
-    class="text-sm text-brand-primary hover:underline self-start"
+    class="text-sm text-brand-primary hover:underline self-start cursor-pointer hover:text-brand-accent"
     [attr.aria-expanded]="expanded()"
   >
     {{ expanded() ? 'Read less' : 'Read more' }}
