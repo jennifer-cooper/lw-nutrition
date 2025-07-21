@@ -1,1 +1,0 @@
-import"./chunk-4CLCTAJ7.js";var o=[{path:"",title:"Privacy Policy \u2013 Louise Wilkinson Nutrition",loadComponent:()=>import("./chunk-JGH75BO6.js").then(e=>e.PrivacyPolicyPage)}];export{o as privacyPolicyRoutes};
